@@ -2,11 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public class Premios
+{
+    public string nombre;
+    public int cantidad;
+}
+
 public class GiroRuleta : MonoBehaviour
 {
     public enum Estado {Esperando, Quieto, GiroHorario, GiroAntiHorario}
     public Estado estado;
 
+    Premios[] premios;
 
     public GuizmoMovements speed;
     
